@@ -20,7 +20,7 @@ def index():
 
 @app.route('/bakeries')
 def bakeries():
-    return ''
+    return jsonify(bakeries_data)
 
 @app.route('/bakeries/<int:id>')
 def bakery_by_id(id):
